@@ -21,10 +21,10 @@ namespace ConsoleApp1
 
             for (int i = array.Length - 1; i >= 0; i--)
             {
-                int position = random.Next(i + 1);
-                int shuffleIndex = array[position];
-                array[position] = array[i];
-                array[i] = shuffleIndex;
+                int number = random.Next(i + 1);
+                int buffer = array[number];
+                array[number] = array[i];
+                array[i] = buffer;
             }
         }
     }
